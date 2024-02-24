@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Lyrics Practice</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="index.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <h3>Learned Words</h3>
+            <ul id="learnedWords"></ul>
+        </div>
+        <div class="main">
+            <label for="speedSelector">Playback Speed:</label>
+            <select id="speedSelector" onchange="changePlaybackSpeed()">
+                <option value="0.5">0.5x</option>
+                <option value="0.75">0.75x</option>
+                <option value="1" selected>1x (Normal)</option>
+                <option value="1.25">1.25x</option>
+                <option value="1.5">1.5x</option>
+            </select>
+
+            <select id="songSelector" onchange="selectSong()">
+                <option value="fmdLsdmYzTo">I KNOW ?</option>
+                <option value="Sv5yCzPCkv8">Snooze</option>
+            </select>
+            <div id="youtubePlayer"></div>
+            <div class="lyrics" id="englishLyrics"></div>
+            <div class="lyrics" id="frenchLyrics"></div>
+        </div>
+    </div>
+</body>
+</html>
