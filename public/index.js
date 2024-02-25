@@ -1,8 +1,8 @@
 // Global variable to store the YouTube player
 var player;
+let learnedWords = [];
 let englishLyrics = [];
 let frenchLyrics = [];
-let learnedWords = [];
 
 const songDetails = {
     "fmdLsdmYzTo": {
